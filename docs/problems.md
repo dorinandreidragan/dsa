@@ -18,6 +18,7 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 ## intermediate
 
 - [Flipping matrix](flipping-matrix.md): 2D Array/List. Canonical. Time: O(n²), Space: O(1)
+- [Queue with two stacks](queue-with-two-stack.md): Stack. Canonical. Time: O(1) amortized per operation, Space: O(n)
 - [Tower breakers](tower-breakers.md): None (Game Theory). Canonical. Time: O(1), Space: O(1)
 - [Truck tour](truck-tour.md): Array/List. Canonical. Time: O(n), Space: O(1)
 
