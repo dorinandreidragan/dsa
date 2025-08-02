@@ -4,6 +4,7 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 
 ## basic
 
+- [Balanced brackets](balanced-brackets.md): Stack. Canonical. Time: O(n), Space: O(n)
 - [Caesar cipher](caesar-cipher.md): String. Canonical. Time: O(n), Space: O(n)
 - [Counting sort](counting-sort.md): Array/List. Canonical. Time: O(n + k), Space: O(k)
 - [Diagonal difference](diagonal-difference.md): 2D Array/List. Canonical. Time: O(n), Space: O(1)
