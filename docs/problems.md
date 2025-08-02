@@ -12,6 +12,7 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 - [FizzBuzz](fizzbuzz.md): None. Canonical. Time: O(1) per value, Space: O(1)
 - [Grid challenge](grid-challenge.md): 2D Array/List. Canonical. Time: O(n \* m log m), Space: O(1)
 - [Lonely integer](lonely-integer.md): Array/List, XOR. Canonical. Time: O(n), Space: O(1) (XOR)
+- [Pairs](pairs.md): HashSet, Array/List. Canonical. Time: O(n), Space: O(n)
 - [Palindrome index](palindrome-index.md): String. Canonical. Time: O(n), Space: O(1)
 - [Recursive digit sum](recursive-digit-sum.md): String. Canonical. Time: O(n), Space: O(1)
 - [Time conversion](time-conversion.md): String. Canonical. Time: O(1), Space: O(1)
