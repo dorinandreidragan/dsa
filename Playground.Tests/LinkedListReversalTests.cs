@@ -1,44 +1,10 @@
 namespace Playground.Tests;
 
-
 // This class contains tests for reversing a singly linked list.
 // The reversal operation involves iterating through the list and reversing the direction of the `Next` pointers.
 // The algorithm is implemented iteratively and works in O(n) time complexity with O(1) space complexity.
-public class LinkedListReversalTests
+public partial class LinkedListReversalTests
 {
-    public class SinglyLinkedListNode(int data)
-    {
-        public int Data { get; private set; } = data;
-
-        public SinglyLinkedListNode? Next { get; set; }
-    }
-
-    public class SinglyLinkedListNodeBuilder
-    {
-        private SinglyLinkedListNode? head;
-        private SinglyLinkedListNode? current;
-
-        public SinglyLinkedListNodeBuilder Add(int data)
-        {
-            if (head is null)
-            {
-                head = new SinglyLinkedListNode(data);
-                current = head;
-            }
-            else
-            {
-                current!.Next = new SinglyLinkedListNode(data);
-                current = current.Next;
-            }
-            return this;
-        }
-
-        public SinglyLinkedListNode Build()
-        {
-            if (head is null) throw new InvalidOperationException("At least one node should be added.");
-            return head;
-        }
-    }
 
     /// <summary>
     /// Reverses a singly linked list.

@@ -24,6 +24,7 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 - [Tower breakers](tower-breakers.md): None (Game Theory). Canonical. Time: O(1), Space: O(1)
 - [Truck tour](truck-tour.md): Array/List. Canonical. Time: O(n), Space: O(1)
 - [Linked list reversal](linked-list-reversal.md): Singly Linked List. Canonical. Time: O(n), Space: O(1)
+- [Remove k-th last node](remove-kth-last-node.md): Singly Linked List. Canonical. Time: O(n), Space: O(1)
 
 ## advanced
 

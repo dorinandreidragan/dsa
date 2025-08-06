@@ -8,9 +8,11 @@ Analyze the implementation of this problem and confirm your understanding about 
 
 ---
 
-write an article in the docs/[file-name].md file in the same manner the other articles are written
+write an article in the docs/[file-name].md file in the same manner the other articles are written. consider the following:
 
-update the problems.md accordingly
+- the difficulties for problems are: basic, intermediate and advanced.
+- use front matter in the same way the other articles use it
+- update the problems.md accordingly
 
 ---
 
