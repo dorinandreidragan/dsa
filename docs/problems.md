@@ -23,6 +23,7 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 - [Queue with two stacks](queue-with-two-stack.md): Stack. Canonical. Time: O(1) amortized per operation, Space: O(n)
 - [Tower breakers](tower-breakers.md): None (Game Theory). Canonical. Time: O(1), Space: O(1)
 - [Truck tour](truck-tour.md): Array/List. Canonical. Time: O(n), Space: O(1)
+- [Linked list reversal](linked-list-reversal.md): Singly Linked List. Canonical. Time: O(n), Space: O(1)
 
 ## advanced
 
