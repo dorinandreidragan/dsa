@@ -24,6 +24,10 @@ A summary of all solved problems, grouped by difficulty. Each entry lists the da
 - [Tower breakers](tower-breakers.md): None (Game Theory). Canonical. Time: O(1), Space: O(1)
 - [Truck tour](truck-tour.md): Array/List. Canonical. Time: O(n), Space: O(1)
 
+## advanced
+
+- [Lego blocks](lego-blocks.md): Dynamic Programming. Canonical. Time: O(w²), Space: O(w)
+
 **Legend:**
 
 - _Canonical_: Solution matches the standard, optimal approach
