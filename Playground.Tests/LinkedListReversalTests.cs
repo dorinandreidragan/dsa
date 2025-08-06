@@ -68,6 +68,16 @@ public class LinkedListReversalTests
         return prev!;
     }
 
+    public SinglyLinkedListNode? ReverseRecursive(SinglyLinkedListNode head)
+    {
+        if (head is null || head.Next is null) return head;
+
+        var newHead = ReverseRecursive(head.Next);
+        head.Next.Next = head;
+        head.Next = null;
+        return newHead;
+    }
+
     [Fact]
     public void Reverse_TestCases()
     {

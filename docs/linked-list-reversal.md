@@ -106,3 +106,58 @@ public SinglyLinkedListNode Reverse(SinglyLinkedListNode head)
 3. Reversing an empty list:
    - Input: `null`
    - Output: Exception (`InvalidOperationException`)
+
+## alternative solution
+
+### recursive approach
+
+The reversal can also be performed recursively. This approach breaks the problem into smaller subproblems, reversing the rest of the list first and then adjusting the `Next` pointer of the current node.
+
+### pseudocode
+
+```
+function reverseRecursive(head):
+    if head is null or head.next is null:
+        return head
+
+    newHead = reverseRecursive(head.next)
+    head.next.next = head
+    head.next = null
+
+    return newHead
+```
+
+### complexity
+
+- **Time Complexity**: O(n), where n is the number of nodes in the list.
+- **Space Complexity**: O(n), due to the recursion stack.
+
+### implementation
+
+The implementation in C# is as follows:
+
+```csharp
+public SinglyLinkedListNode? ReverseRecursive(SinglyLinkedListNode head)
+{
+    if (head is null || head.Next is null) return head;
+
+    var newHead = ReverseRecursive(head.Next);
+    head.Next.Next = head;
+    head.Next = null;
+    return newHead;
+}
+```
+
+## comparison of approaches
+
+### iterative vs recursive
+
+- **Space Efficiency**: The iterative approach is more space-efficient, using O(1) space, while the recursive approach uses O(n) space due to the recursion stack.
+- **Performance**: Both approaches have the same time complexity of O(n), but the iterative approach is preferred for large lists to avoid stack overflow.
+- **Readability**: The recursive approach is concise and elegant, making it easier to understand for those familiar with recursion.
+- **Canonical Solution**: The iterative approach is considered canonical due to its better space efficiency and widespread use in practice.
+
+### when to use
+
+- Use the iterative approach for production code or when working with large lists.
+- Use the recursive approach for educational purposes or when recursion is preferred for simplicity.
