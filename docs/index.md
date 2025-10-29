@@ -35,6 +35,7 @@ features:
 ---
 
 <script setup>
+import { withBase } from 'vitepress'
 import { data as problems } from './.vitepress/theme/data/problems.data.js'
 
 const basicCount = problems.filter(p => p.difficulty === 'basic').length
@@ -74,7 +75,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
 ## basic
 
 <div class="problem-list">
-  <a v-for="problem in basicProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
+  <a v-for="problem in basicProblems" :key="problem.filename" :href="withBase(`/${problem.filename}`)" class="problem-item">
     <h3>{{ problem.name }}</h3>
     <p class="meta">
       <span class="badge">{{ problem.data_structure }}</span>
@@ -87,7 +88,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
 ## intermediate
 
 <div class="problem-list">
-  <a v-for="problem in intermediateProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
+  <a v-for="problem in intermediateProblems" :key="problem.filename" :href="withBase(`/${problem.filename}`)" class="problem-item">
     <h3>{{ problem.name }}</h3>
     <p class="meta">
       <span class="badge">{{ problem.data_structure }}</span>
@@ -100,7 +101,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
 ## advanced
 
 <div class="problem-list">
-  <a v-for="problem in advancedProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
+  <a v-for="problem in advancedProblems" :key="problem.filename" :href="withBase(`/${problem.filename}`)" class="problem-item">
     <h3>{{ problem.name }}</h3>
     <p class="meta">
       <span class="badge">{{ problem.data_structure }}</span>
