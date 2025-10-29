@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Background circle for visibility -->
+  <circle cx="24" cy="24" r="22" fill="#10b981"/>
+  
+  <!-- DSA text in bold, clean style -->
+  <text x="24" y="30" 
+        font-family="system-ui, -apple-system, sans-serif" 
+        font-size="18" 
+        font-weight="700" 
+        fill="white" 
+        text-anchor="middle">DSA</text>
+</svg>
