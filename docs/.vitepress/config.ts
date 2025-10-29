@@ -59,6 +59,7 @@ function groupByDifficulty() {
 export default defineConfig({
     title: 'dsa problems',
     description: 'data structures and algorithms problem documentation with solutions',
+    base: '/dsa/',
 
     themeConfig: {
         logo: '/logo.svg',
