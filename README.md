@@ -2,14 +2,26 @@
 
 Optimal algorithms beat brute force every time. This repository proves it.
 
+## 🌐 documentation website
+
+Visit the live documentation: [Coming Soon - GitHub Pages]
+
+Run locally:
+```bash
+npm install
+npm run docs:dev
+```
+
 ## what lives here
 
 ```
-├── docs/                   # Algorithm articles and analysis
-│   ├── problems.md         # Complete catalog of solved problems
-│   └── *.md                # Individual deep dives
-├── Playground.Tests/       # xUnit implementations and test cases
-└── README.md               # This file
+├── docs/                   # VitePress documentation site
+│   ├── .vitepress/        # Site configuration & theme
+│   ├── index.md           # Home page
+│   ├── problems.md        # Complete catalog
+│   └── *.md               # Problem deep dives
+├── Playground.Tests/      # xUnit implementations and test cases
+└── package.json          # Node dependencies & scripts
 ```
 
 ## the approach

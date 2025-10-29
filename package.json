@@ -1,0 +1,25 @@
+{
+  "name": "dsa",
+  "version": "1.0.0",
+  "description": "Optimal algorithms beat brute force every time. This repository proves it.",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "keywords": [
+    "dsa",
+    "algorithms",
+    "data-structures",
+    "documentation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^24.9.2",
+    "gray-matter": "^4.0.3",
+    "vitepress": "^1.6.4",
+    "vue": "^3.5.22"
+  }
+}

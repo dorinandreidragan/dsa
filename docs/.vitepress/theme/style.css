@@ -1,0 +1,70 @@
+:root {
+    --vp-c-brand-1: #10b981;
+    --vp-c-brand-2: #059669;
+    --vp-c-brand-3: #047857;
+}
+
+.dark {
+    --vp-c-brand-1: #34d399;
+    --vp-c-brand-2: #10b981;
+    --vp-c-brand-3: #059669;
+}
+
+/* Custom styles for problem metadata */
+.problem-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.5rem 0;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.badge.difficulty {
+    color: white;
+}
+
+.badge.difficulty.basic {
+    background-color: #10b981;
+}
+
+.badge.difficulty.intermediate {
+    background-color: #f59e0b;
+}
+
+.badge.difficulty.advanced {
+    background-color: #ef4444;
+}
+
+.badge.complexity {
+    background-color: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+    border: 1px solid var(--vp-c-divider);
+}
+
+.badge.data-structure {
+    background-color: var(--vp-c-brand-soft);
+    color: var(--vp-c-brand-1);
+}
+
+/* Enhanced code blocks */
+.vp-doc div[class*='language-'] {
+    margin: 1.5rem 0;
+    border-radius: 8px;
+}
+
+/* Better spacing for lists */
+.vp-doc ul,
+.vp-doc ol {
+    padding-left: 1.5rem;
+}
+
+.vp-doc li {
+    margin: 0.5rem 0;
+}
