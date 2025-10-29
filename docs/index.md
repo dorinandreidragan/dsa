@@ -2,36 +2,36 @@
 layout: home
 
 hero:
-  name: DSA Problems
-  text: Master data structures and algorithms
-  tagline: Clear explanations, optimal solutions, production-ready code
+  name: dsa problems
+  text: master data structures and algorithms
+  tagline: clear explanations, optimal solutions, production-ready code
   actions:
     - theme: brand
-      text: Browse Problems
+      text: browse problems
       link: /balanced-brackets
     - theme: alt
-      text: View on GitHub
+      text: view on github
       link: https://github.com/dorinandreidragan/dsa
 
 features:
   - icon: 📚
-    title: 20 Problems Solved
-    details: Comprehensive collection covering basic to advanced difficulty levels with canonical solutions
+    title: 20 problems solved
+    details: comprehensive collection covering basic to advanced difficulty levels with canonical solutions
   - icon: ⚡
-    title: Time & Space Complexity
-    details: Every solution includes detailed complexity analysis for optimal performance understanding
+    title: time & space complexity
+    details: every solution includes detailed complexity analysis for optimal performance understanding
   - icon: 🎯
-    title: Real Problem Scenarios
-    details: Problems sourced from HackerRank with practical applications in technical interviews
+    title: real problem scenarios
+    details: problems sourced from HackerRank with practical applications in technical interviews
   - icon: 💻
-    title: Production Code
-    details: Clean C# implementations with proper edge case handling and test coverage
+    title: production code
+    details: clean C# implementations with proper edge case handling and test coverage
   - icon: 🔍
-    title: Pattern Recognition
-    details: Learn to identify problem patterns and choose the right data structures
+    title: pattern recognition
+    details: learn to identify problem patterns and choose the right data structures
   - icon: 📖
-    title: Clear Explanations
-    details: Step-by-step breakdowns of how algorithms work with visual examples
+    title: clear explanations
+    details: step-by-step breakdowns of how algorithms work with visual examples
 ---
 
 <script setup>
@@ -46,32 +46,32 @@ const intermediateProblems = problems.filter(p => p.difficulty === 'intermediate
 const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
 </script>
 
-## Problems by difficulty
+## problems by difficulty
 
 <div class="difficulty-grid">
   <div class="difficulty-card basic">
-    <h3>Basic</h3>
+    <h3>basic</h3>
     <p class="count">{{ basicCount }} problems</p>
-    <p class="description">Foundation concepts and common patterns</p>
-    <a href="#basic" class="card-link">Explore →</a>
+    <p class="description">foundation concepts and common patterns</p>
+    <a href="#basic" class="card-link">explore →</a>
   </div>
   
   <div class="difficulty-card intermediate">
-    <h3>Intermediate</h3>
+    <h3>intermediate</h3>
     <p class="count">{{ intermediateCount }} problems</p>
-    <p class="description">Advanced techniques and optimizations</p>
-    <a href="#intermediate" class="card-link">Explore →</a>
+    <p class="description">advanced techniques and optimizations</p>
+    <a href="#intermediate" class="card-link">explore →</a>
   </div>
   
   <div class="difficulty-card advanced">
-    <h3>Advanced</h3>
+    <h3>advanced</h3>
     <p class="count">{{ advancedCount }} problems</p>
-    <p class="description">Complex algorithms and dynamic programming</p>
-    <a href="#advanced" class="card-link">Explore →</a>
+    <p class="description">complex algorithms and dynamic programming</p>
+    <a href="#advanced" class="card-link">explore →</a>
   </div>
 </div>
 
-## Basic
+## basic
 
 <div class="problem-list">
   <a v-for="problem in basicProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
@@ -84,7 +84,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
   </a>
 </div>
 
-## Intermediate
+## intermediate
 
 <div class="problem-list">
   <a v-for="problem in intermediateProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
@@ -97,7 +97,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
   </a>
 </div>
 
-## Advanced
+## advanced
 
 <div class="problem-list">
   <a v-for="problem in advancedProblems" :key="problem.filename" :href="`/${problem.filename}`" class="problem-item">
@@ -200,7 +200,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
   margin: 0 0 0.5rem 0;
   font-size: 1.25rem;
   color: var(--vp-c-brand-1);
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 
 .problem-item .meta {
@@ -217,7 +217,7 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
   color: var(--vp-c-brand-1);
   border-radius: 4px;
   font-size: 0.75rem;
-  text-transform: capitalize;
+  text-transform: lowercase;
 }
 
 .problem-item .complexity {
@@ -231,5 +231,10 @@ const advancedProblems = problems.filter(p => p.difficulty === 'advanced')
   color: var(--vp-c-text-2);
   font-size: 0.9rem;
   line-height: 1.5;
+  text-transform: lowercase;
+}
+
+.problem-item .description::first-letter {
+  text-transform: lowercase;
 }
 </style>

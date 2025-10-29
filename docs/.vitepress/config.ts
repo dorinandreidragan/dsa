@@ -57,27 +57,27 @@ function groupByDifficulty() {
 }
 
 export default defineConfig({
-    title: 'DSA Problems',
-    description: 'Data structures and algorithms problem documentation with solutions',
+    title: 'dsa problems',
+    description: 'data structures and algorithms problem documentation with solutions',
 
     themeConfig: {
         logo: '/logo.svg',
 
         nav: [
-            { text: 'Home', link: '/' },
+            { text: 'home', link: '/' },
             {
-                text: 'By Difficulty',
+                text: 'by difficulty',
                 items: [
-                    { text: 'Basic', link: '/#basic' },
-                    { text: 'Intermediate', link: '/#intermediate' },
-                    { text: 'Advanced', link: '/#advanced' }
+                    { text: 'basic', link: '/#basic' },
+                    { text: 'intermediate', link: '/#intermediate' },
+                    { text: 'advanced', link: '/#advanced' }
                 ]
             }
         ],
 
         sidebar: [
             {
-                text: 'Basic',
+                text: 'basic',
                 collapsed: false,
                 items: groupByDifficulty().basic.map(p => ({
                     text: p.name,
@@ -85,7 +85,7 @@ export default defineConfig({
                 }))
             },
             {
-                text: 'Intermediate',
+                text: 'intermediate',
                 collapsed: false,
                 items: groupByDifficulty().intermediate.map(p => ({
                     text: p.name,
@@ -93,7 +93,7 @@ export default defineConfig({
                 }))
             },
             {
-                text: 'Advanced',
+                text: 'advanced',
                 collapsed: false,
                 items: groupByDifficulty().advanced.map(p => ({
                     text: p.name,
@@ -111,8 +111,8 @@ export default defineConfig({
         },
 
         footer: {
-            message: 'Released under the MIT License.',
-            copyright: 'Copyright © 2025-present'
+            message: 'released under the MIT license',
+            copyright: 'copyright © 2025-present'
         }
     },
 
